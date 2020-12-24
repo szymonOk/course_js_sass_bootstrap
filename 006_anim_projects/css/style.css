@@ -1,0 +1,113 @@
+body {
+  background-color: #333;
+}
+
+.roller {
+  height: 30vh;
+  background-image: -webkit-gradient(linear, left top, right top, from(gold), color-stop(gold), color-stop(royalblue), color-stop(tomato), color-stop(royalblue), color-stop(gold), to(gold));
+  background-image: linear-gradient(90deg, gold, gold, royalblue, tomato, royalblue, gold, gold);
+  background-size: 700%;
+  background-position: 0 0;
+  -webkit-animation: anim 2s linear infinite;
+          animation: anim 2s linear infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.roller:hover {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+@-webkit-keyframes anim {
+  from {
+    background-position: 0% 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes anim {
+  from {
+    background-position: 0% 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.watch {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  margin: 150px auto;
+  background-color: #fff;
+}
+
+.watcher {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 150px;
+  width: 5px;
+  background-color: #000;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-animation: tik 2s linear infinite;
+          animation: tik 2s linear infinite;
+}
+
+.start {
+  position: absolute;
+  right: 500px;
+  top: 20px;
+  height: 100px;
+  width: 200px;
+  background-color: green;
+}
+
+.stop {
+  position: absolute;
+  right: 500px;
+  top: 140px;
+  height: 100px;
+  width: 200px;
+  background-color: red;
+}
+
+.stop:hover ~ .watcher {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@-webkit-keyframes tik {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes tik {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */

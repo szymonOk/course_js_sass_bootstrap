@@ -1,0 +1,49 @@
+@import reset
+
+$h_color: gold
+$bg_color_odd: royalblue
+$bg_color_even: deepskyblue
+
+@mixin circle
+    width: 100px
+    height: 100px
+    margin: 30px auto
+    background-color: tomato
+    border: 3px solid black
+    border-radius: 50%
+
+    
+
+html
+    font-size: 10px
+
+body
+    font-family: sans-serif
+
+section
+    height: 25vh
+    text-align: center
+
+h1
+    font-size: 3rem
+    color: $h-color
+
+h2
+    font-size: 2.4rem
+    color: $h-color
+
+h3
+    font-size: 1.8rem
+    color: $h-color
+
+p
+    font-size: 1.6rem
+
+.odd
+    background-color: $bg_color_odd
+
+.even
+    background-color: $bg_color_even
+
+.circle
+    @include circle

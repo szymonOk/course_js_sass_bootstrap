@@ -1,0 +1,36 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #444;
+}
+
+ul li:nth-child(2n) {
+  color: #b962a3;
+}
+
+span:first-of-type {
+  color: #3b7e78;
+}
+
+.test p:first-child {
+  color: tomato;
+}
+
+.test p:last-child {
+  color: lime;
+}
+
+.title {
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.title:hover {
+  color: red;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,9 @@
+https://animista.net/ - animacje
+
+GRID:
+grid line - linia
+grid cell - pojedyńcza komórka
+grid area - jakaś przestrzeń
+grid track - pare komórek
+frid column/row - cała kolumna/wiersz
+gutter - odstęp między row/column
