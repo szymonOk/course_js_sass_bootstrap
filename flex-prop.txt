@@ -1,0 +1,39 @@
+FLEX CONTAINER (rodzic) :
+
+    display: flex / inline-flex;
+
+    flex-direction: row [ wartość domyślna ] / column / row-reverse / column-reverse;
+
+    flex-wrap: wrap / nowrap [ wartość domyślna ];
+
+    skrócone: flex-flow: [flex direcrion] [flex wrap]
+
+    align-items (prostopadłe do osi głównej): stretch [ wartość domyślna ] / flex-start / flex-end / center / baseline (wyrównuje elementy do tekstu);
+
+    justify-content (równoległe do osi głównej): flex-start [ wartość domyślna ] / flex-end / center / space-around (pomiędzy podwójne i pojedyncze po bokach) / space-between (przerwy tylko pomiędzy) / space-evenly (wszędzie równe przerwy);
+
+    align-content: stretch [ wartość domyślna ] / center / flex-start / flex-end / space-around / space-between;    - muszą byc co najmniej dwie linie elementów do pozycjonowania
+
+
+FLEX ITEM (dziecko):
+
+    flex-basis: auto [ wartość domyślna ] / rozmiar w px, %, rem itd;   
+    odpowiada za width lub height 
+    zależnie od flex-direction: 
+    flex-dir: row --> działa na width
+    flex-dir: column --> działa na height
+    
+    flex-grow: 0 [ wartość domyślna ] / 1;
+    element może się zwiększać width/height
+
+    flex-shrink: 0 / 1 [ wartość domyślna ];
+    element może się zmniejszać width/height
+    0 - nie może się zmniejszać
+    1 - może się zmniejszać
+
+    skrócone: flex: [grow] [shrink] [flex-basis];
+
+    order: 0 [ wartość domyślna ] / x;
+
+    align-self: auto [ wartość domyślna ] / stretch / flex-start / flex-end / center;
+    działa jak align-items tylko działa na child
