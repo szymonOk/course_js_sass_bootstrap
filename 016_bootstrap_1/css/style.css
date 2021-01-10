@@ -1,0 +1,55 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #444;
+  overflow-x: hidden;
+  color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+h2 {
+  margin-top: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.line {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.underline {
+  position: absolute;
+  background-color: #ddd;
+  height: 4px;
+  width: 70px;
+  left: calc(50% - 35px);
+  top: 40px;
+  border-radius: 10px;
+}
+
+.container {
+  background-color: limegreen;
+}
+
+.container-fluid {
+  background-color: tomato;
+}
+
+p {
+  text-align: center;
+}
+
+.row div {
+  border: 1px solid gold;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+/*# sourceMappingURL=style.css.map */
