@@ -52,4 +52,21 @@ p {
   text-align: center;
   line-height: 50px;
 }
+
+.bg-info {
+  width: 400px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.bg-light {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.dd {
+  background-color: limegreen;
+  font-size: 32px;
+}
 /*# sourceMappingURL=style.css.map */
