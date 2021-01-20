@@ -7,3 +7,7 @@ grid area - jakaś przestrzeń
 grid track - pare komórek
 frid column/row - cała kolumna/wiersz
 gutter - odstęp między row/column
+
+https://animate.style/ - animacje
+wywołanie animacji:
+<div class="os-animation" data-animation"nazwaAnimacji" data-delay="1s"></div>
