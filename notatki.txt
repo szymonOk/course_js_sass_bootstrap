@@ -11,3 +11,11 @@ gutter - odstęp między row/column
 https://animate.style/ - animacje
 wywołanie animacji:
 <div class="os-animation" data-animation"nazwaAnimacji" data-delay="1s"></div>
+
+scroll fix
+
+.scroll-fix::before
+    display: block
+    margin-top: minus-menu-height
+    height: menu-height
+    content: ''

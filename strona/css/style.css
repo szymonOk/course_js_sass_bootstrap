@@ -15,6 +15,13 @@ body {
   background-color: #aaa;
 }
 
+.scroll-fix::before {
+  display: block;
+  content: '';
+  height: 72px;
+  margin-top: -72px;
+}
+
 nav {
   text-transform: uppercase;
   font-weight: bold;
@@ -30,7 +37,7 @@ nav a, nav i {
 
 nav .navbar-brand {
   font-weight: normal;
-  margin-left: 22px;
+  margin-left: 10px;
 }
 
 nav .navbar-brand:hover .nav-title {
@@ -148,6 +155,11 @@ header .hero-text {
 
 header .hero-text h1 {
   text-transform: uppercase;
+  font-size: 32px;
+}
+
+header .hero-text p {
+  font-size: 15px;
 }
 
 header .hero-text .title {
@@ -167,10 +179,10 @@ header .hero-text .btn {
 main .wrapper {
   width: 80%;
   margin: 0 auto;
-  text-align: center;
 }
 
 main .wrapper h2 {
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -179,6 +191,28 @@ main .underline {
   height: 4px;
   background-color: gold;
   margin: 0 auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+main #aboutus i {
+  font-size: 32px;
+  margin-top: 35px;
+}
+
+main #aboutus h4 {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+main #aboutus .col-sm-6 {
+  padding: 0 30px;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+main #aboutus .col-sm-6:hover {
+  color: #e2b900;
 }
 
 @media (min-width: 450px) {

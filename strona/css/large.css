@@ -1,3 +1,10 @@
+.scroll-fix::before {
+  display: block;
+  content: '';
+  height: 61.5px;
+  margin-top: -61.5px;
+}
+
 nav {
   padding: 0 30px;
 }

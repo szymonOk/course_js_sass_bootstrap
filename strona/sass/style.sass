@@ -10,6 +10,12 @@ body
     position: relative
     background-color: #aaa
 
+.scroll-fix::before
+    display: block
+    content: ''
+    height: 72px
+    margin-top: -72px
+
 //NAVBAR
 nav
     text-transform: uppercase
@@ -21,7 +27,7 @@ nav
 
     .navbar-brand
         font-weight: normal
-        margin-left: 22px
+        margin-left: 10px
 
     .navbar-brand:hover .nav-title
         color: white
@@ -104,6 +110,9 @@ header
         justify-content: space-between
         h1
             text-transform: uppercase
+            font-size: 32px
+        p
+            font-size: 15px
         .title
             color: $main-color
             letter-spacing: 1px
@@ -118,8 +127,8 @@ main
     .wrapper
         width: 80%
         margin: 0 auto
-        text-align: center
         h2
+            text-align: center
             text-transform: uppercase
 
     .underline
@@ -127,6 +136,24 @@ main
         height: 4px
         background-color: $main-color
         margin: 0 auto
+        border-radius: 10px
+        margin-bottom: 10px
+
+    #aboutus
+        i
+            font-size: 32px
+            margin-top: 35px
+        h4
+            text-transform: uppercase
+            font-size: 20px
+        
+        .col-sm-6
+            padding: 0 30px
+            transition: color .3s
+            
+        .col-sm-6:hover
+            color: #e2b900
+
             
 
 

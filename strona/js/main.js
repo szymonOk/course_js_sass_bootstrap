@@ -4,13 +4,25 @@ document.addEventListener('DOMContentLoaded', function(){
 
     function addShadow(){
         
-        if(window.scrollY >= 300)
+        if(window.scrollY >= 100)
             nav.classList.add('shadow-bg')
         else
             nav.classList.remove('shadow-bg')
     }
 
     window.addEventListener('scroll', addShadow)
+
+
+    //menu hide
+    $(document).ready(function () {
+        $(document).click(function (event) {
+            var clickover = $(event.target);
+            var _opened = $(".navbar-collapse").hasClass("show");
+            if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+                $(".navbar-toggler").click();
+            }
+        });
+    });
 
 
 });

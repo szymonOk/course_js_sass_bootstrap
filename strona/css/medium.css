@@ -2,4 +2,8 @@ header .hero-img {
   background-image: url("../img/heromax.jpg");
   background-position: center;
 }
+
+header .hero-text h1 {
+  font-size: 40px;
+}
 /*# sourceMappingURL=medium.css.map */
