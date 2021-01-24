@@ -205,13 +205,14 @@ main #aboutus h4 {
   font-size: 20px;
 }
 
-main #aboutus .col-sm-6 {
+main #aboutus .about-us-item {
   padding: 0 30px;
   -webkit-transition: color .3s;
   transition: color .3s;
+  visibility: hidden;
 }
 
-main #aboutus .col-sm-6:hover {
+main #aboutus .about-us-item:hover {
   color: #e2b900;
 }
 
