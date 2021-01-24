@@ -18,6 +18,8 @@ body {
 nav {
   text-transform: uppercase;
   font-weight: bold;
+  -webkit-transition: background-color .45s;
+  transition: background-color .45s;
 }
 
 nav a, nav i {
@@ -81,6 +83,10 @@ nav .navbar-nav {
   margin-left: 15px;
   padding: 5px;
   border-left: 1px solid gold;
+}
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 header .hero-img {
@@ -156,6 +162,23 @@ header .hero-text .btn {
       align-self: center;
   text-transform: uppercase;
   padding-top: 8px;
+}
+
+main .wrapper {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main .wrapper h2 {
+  text-transform: uppercase;
+}
+
+main .underline {
+  width: 60px;
+  height: 4px;
+  background-color: gold;
+  margin: 0 auto;
 }
 
 @media (min-width: 450px) {

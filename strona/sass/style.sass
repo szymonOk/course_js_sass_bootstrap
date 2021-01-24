@@ -1,10 +1,12 @@
 @import reset
 
+$main-color: gold
+
 html
     scroll-behavior: smooth
 
 body
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Comfortaa', cursive
     position: relative
     background-color: #aaa
 
@@ -12,6 +14,7 @@ body
 nav
     text-transform: uppercase
     font-weight: bold
+    transition: background-color .45s
     a, i
         color: white
         transition: color .3s
@@ -25,7 +28,7 @@ nav
 
     .nav-title
         font-size: 110%
-        color: gold
+        color: $main-color
         letter-spacing: 1px
         transition: color .3s
 
@@ -36,7 +39,7 @@ nav
         width: fit-content
 
     .fa-cut
-        color: gold
+        color: $main-color
         margin-right: 3px
         font-size: 30px
 
@@ -45,18 +48,21 @@ nav
         font-size: 26px
 
     button:hover .fa-bars
-        color: gold
+        color: $main-color
 
     a:hover
-        color: gold
+        color: $main-color
 
     .active
-        color: gold
+        color: $main-color
 
     .navbar-nav
         margin-left: 15px
         padding: 5px
-        border-left: 1px solid gold
+        border-left: 1px solid $main-color
+
+.shadow-bg
+    background-color: rgba(0,0,0,.8)
 
 //HEADER
 
@@ -99,13 +105,28 @@ header
         h1
             text-transform: uppercase
         .title
-            color: gold
+            color: $main-color
             letter-spacing: 1px
             font-size: 110%
         .btn
             align-self: center
             text-transform: uppercase
             padding-top: 8px
+
+//MAIN
+main
+    .wrapper
+        width: 80%
+        margin: 0 auto
+        text-align: center
+        h2
+            text-transform: uppercase
+
+    .underline
+        width: 60px
+        height: 4px
+        background-color: $main-color
+        margin: 0 auto
             
 
 
