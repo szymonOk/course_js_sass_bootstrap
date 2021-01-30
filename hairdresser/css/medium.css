@@ -6,4 +6,8 @@ header .hero-img {
 header .hero-text h1 {
   font-size: 40px;
 }
+
+main #aboutus .serv-image {
+  background-position: 30% 0;
+}
 /*# sourceMappingURL=medium.css.map */

@@ -142,19 +142,53 @@ main
     #aboutus
         i
             font-size: 32px
-            margin-top: 35px
+            
         h4
             text-transform: uppercase
             font-size: 20px
         
         .about-us-item
+            margin-top: 35px
             padding: 0 30px
             transition: color .3s
             visibility: hidden
             
         .about-us-item:hover
             color: #e2b900
+        
+        .serv-image
+            background-image: url("../img/pink-hair.jpg")
+            background-repeat: no-repeat
+            background-position: 20% 0
+            background-size: cover
+            position: relative
+            background-attachment: fixed
+            z-index: -2
+            overflow: hidden
 
+        .serv-bg
+            position: absolute
+            top: 0
+            height: 100%
+            width: 100%
+            background-color: rgba(0,0,0,.8)
+            z-index: -1
+
+        .serv-text
+            visibility: hidden
+            padding: 35px 0
+            color: #e2e2e2
+            text-shadow: 5px 5px 8px black
+            i
+                font-size: 24px
+            p
+                margin-bottom: 8px
+            h4
+                font-size: 23px
+
+        .about-us-item2
+            padding: 0 30px
+            margin-top: 40px
             
 
 
